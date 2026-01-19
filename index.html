@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ચામુંડા ચા નાસ્તા અને પાન પાર્લર</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3075/3075977.png">
+    <style>
+        /* ફોટા પ્રીલોડ */
+        .preload-images {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- પ્રીલોડ ફોટા -->
+    <div class="preload-images">
+        <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="preload">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="preload">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="preload">
+    </div>
+
+    <!-- નેવિગેશન બાર -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-mug-hot"></i>
+                <div class="logo-text">
+                    <h1>ચામુંડા ચા નાસ્તા</h1>
+                    <span class="subtitle">અને પાન પાર્લર</span>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="active">હોમ</a>
+                <a href="#menu">મેનૂ</a>
+                <a href="#cart-section" class="cart-btn-nav">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="#contact">સંપર્ક</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- હોમ સેક્શન -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>ગરમાગરમ ચા અને સ્વાદિષ્ટ નાસ્તા</h2>
+                <p>અમદાવાદની સર્વોત્તમ ચા અને નાસ્તાની દુકાન</p>
+                <div class="hero-info">
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <span>સવારે 7 થી રાત્રે 9 વાગ્યા સુધી</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>અમદાવાદ, ગુજરાત</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn-primary">ઓર્ડર કરો <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://wa.me/919662787286" class="btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-mug-hot"></i>
+                    <span>ચા અને નાસ્તો</span>
+                </div>
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="ચા અને નાસ્તો"
+                     loading="eager"
+                     onload="this.style.opacity='1'">
+            </div>
+        </div>
+    </section>
+
+    <!-- મેનૂ સેક્શન -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">અમારું મેનૂ</h2>
+            <p class="section-subtitle">તાજા અને સ્વાદિષ્ટ ખોરાક</p>
+            
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">બધા</button>
+                <button class="filter-btn" data-filter="drink">પીણાં</button>
+                <button class="filter-btn" data-filter="snack">નાસ્તો</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- મેનૂ આઇટમ્સ JavaScript દ્વારા ઍડ થશે -->
+            </div>
+        </div>
+    </section>
+
+    <!-- કાર્ટ સેક્શન (નીચે) -->
+    <section id="cart-section" class="cart-section">
+        <div class="container">
+            <h2 class="section-title">તમારું ઓર્ડર</h2>
+            <p class="section-subtitle">આઇટમ્સ ઍડ કરો અને ઓર્ડર કરો</p>
+            
+            <div class="cart-container">
+                <div class="cart-header">
+                    <h3><i class="fas fa-shopping-cart"></i> તમારી કાર્ટ</h3>
+                    <div class="cart-stats">
+                        <span class="total-items">આઇટમ્સ: <strong>0</strong></span>
+                        <span class="total-price">કુલ: <strong>₹0</strong></span>
+                    </div>
+                </div>
+                
+                <div class="cart-items-container">
+                    <!-- કાર્ટ આઇટમ્સ અહીં લોડ થશે -->
+                    <div class="empty-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>તમારી કાર્ટ ખાલી છે</p>
+                        <a href="#menu" class="btn-primary">મેનૂ જુઓ</a>
+                    </div>
+                </div>
+                
+                <div class="cart-actions">
+                    <button class="btn-secondary" id="clearCartBtn">
+                        <i class="fas fa-trash"></i> કાર્ટ ખાલી કરો
+                    </button>
+                    <button class="btn-primary" id="orderWhatsAppBtn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp પર ઓર્ડર
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- સંપર્ક સેક્શન -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">સંપર્ક કરો</h2>
+            <p class="section-subtitle">અમારી સાથે સંપર્કમાં રહો</p>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>સુરેશભાઈ</h3>
+                    <a href="tel:9662787286" class="contact-link">9662787286</a>
+                    <p class="contact-note">WhatsApp પર ઓર્ડર કરો</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>કપુરભાઈ</h3>
+                    <a href="tel:8769592822" class="contact-link">8769592822</a>
+                    <p class="contact-note">સીધો કૉલ કરો</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>ખુલવાનો સમય</h3>
+                    <p class="contact-time">સવારે 7:00 - રાત્રે 9:00</p>
+                    <p class="contact-note">રોજ ખુલેલું</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>સ્થાન</h3>
+                    <p class="contact-location">અમદાવાદ, ગુજરાત</p>
+                    <p class="contact-note">ડિલિવરી ઉપલબ્ધ</p>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117462.59373483182!2d72.473787868734!3d23.01231218682824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b9e13c1d13f%3A0x5f18b7f4c4b6e1a8!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1641234567890!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0; border-radius: 10px;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        title="અમદાવાદ નકશો">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ફુટર -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-mug-hot"></i>
+                        <div>
+                            <h3>ચામુંડા ચા નાસ્તા</h3>
+                            <p>અને પાન પાર્લર</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        અમદાવાદની સર્વોત્તમ ચા અને નાસ્તાની દુકાન
+                    </p>
+                </div>
+                
+                <div class="footer-quick-links">
+                    <h4>જલદી લિંક્સ</h4>
+                    <a href="#home"><i class="fas fa-home"></i> હોમ</a>
+                    <a href="#menu"><i class="fas fa-utensils"></i> મેનૂ</a>
+                    <a href="#cart-section"><i class="fas fa-shopping-cart"></i> ઓર્ડર</a>
+                    <a href="#contact"><i class="fas fa-phone"></i> સંપર્ક</a>
+                </div>
+                
+                <div class="footer-order">
+                    <h4>ઓર્ડર કરો</h4>
+                    <a href="https://wa.me/919662787286?text=હેલો!%20ચામુંડા%20ચા%20નાસ્તા%20માંથી%20ઓર્ડર%20કરવા%20માંગું%20છું" 
+                       class="whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp પર ઓર્ડર
+                    </a>
+                    <div class="footer-timing">
+                        <p><i class="fas fa-clock"></i> સવારે 7:00 - રાત્રે 9:00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 ચામુંડા ચા નાસ્તા અને પાન પાર્લર. બધા હક્ક સ્વરક્ષિત.</p>
+                <p class="developer-note">Made with ❤️ for Ahmedabad</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+                  </html>
